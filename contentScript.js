@@ -1,10 +1,22 @@
+function extractTextWithNewlines(element) {
+  let lines = [];
+  for (let node of element.childNodes) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      lines.push(node.nodeValue);
+    } else if (node.tagName === "BR" || node.tagName === "P") {
+      lines.push("\n");
+    }
+  }
+  return lines.join("");
+}
+
 window.onload = function () {
   if (window.location.host === "prompttoolbox.com") {
     // Check if the page has the element with id 'kt_clipboardicon_0'
     let clipButton = document.getElementById("kt_clipboardicon_0");
     if (clipButton) {
       // Extract the text from the card title
-      let text = document.querySelector(".card-title").innerText;
+      let text = extractTextWithNewlines(document.querySelector(".card-title"));
 
       // Create a link element
       let linkButton = document.createElement("button");
