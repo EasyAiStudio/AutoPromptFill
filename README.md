@@ -3,3 +3,6 @@ AutoPromptFill is a unique Chrome extension designed to enhance your productivit
 
 ## How to use
 Download, then open [chrome://extensions/](chrome://extensions/) and click "Load unpacked". Select folder containing AutoPromptFill files.
+
+## TODO
+When a bit more testing and bug fixing is done will submit to Chrome Store so updates are rolled out and it is much easier to install
