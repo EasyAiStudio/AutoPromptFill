@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "AutoPromptFill",
+  "short_name": "APF",
+  "version": "1.0",
+  "description": "AutoPromptFill enhances your productivity with ChatGPT. This tool automatically fills prompts that you've created using the PromptToolbox. Now you can quickly fill your prompts without the hassle, freeing up your time for more creative work.",
+  "permissions": ["activeTab", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://prompttoolbox.com/*", "https://chat.openai.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
