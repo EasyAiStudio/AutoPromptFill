@@ -1,6 +1,8 @@
 # AutoPromptFill
 AutoPromptFill is a unique Chrome extension designed to enhance your productivity with [ChatGPT](https://chat.openai.com). This tool automatically fills prompts that you've created using the [Prompt Toolbox](https://prompttoolbox.com) Now you can quickly fill your prompts without the hassle, freeing up your time for more creative work.
 
+![Screenshot of a AutoPromptFill in action](https://autopromptfill.com/apf-screenshot.png)
+
 ## How to use
 1. Download and extract repo into a new folder
 2. open chrome://extensions/
